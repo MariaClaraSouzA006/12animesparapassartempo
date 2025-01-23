@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Oswald:wght@200..700&family=Righteous&family=VT323&display=swap');
+
+*{
+    font-family: 'Domine', serif;
+}
+
+body{
+    margin: 0;
+    background-color: #000;
+    /* display: block; */
+}
+
+:root{
+    --color1: #22fd9a6b;
+    --color2: rgb(127, 255, 172);
+    --color3: #444444;
+    --color4: #2c2c2c;
+    --color5: #333333;
+}
+
+.containerc{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#cabecalho{
+    background-color: var(--color4);
+    margin-bottom: 20px;
+}
+
+#cabecalho .containerc{
+    max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+#cabecalho #logo{
+    width: 90px;
+    height: 90px;
+    margin-top: 20px; 
+    /* espaçamento */
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* .navigation_social{
+    margin-left: auto;
+    display: flex;
+    column-gap: 24px;
+    float: right;
+    margin-left: 850px;
+    
+} */
+
+.navigation_social {
+    margin-left: auto;
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+}
+
+.navigation_social svg{
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: all 0.45;
+}
+
+.navigation_social svg:hover{
+    opacity: 1;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+
+h1{
+    text-align: center;
+    color: #f6f6f6;
+    font-size: 2.5rem;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reduz tamanho da fonte em telas médias */
+        padding-bottom: 15px; /* Reduz o espaçamento inferior */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Fonte menor em telas pequenas */
+    }
+}
+
+#verde{
+    color: rgb(127, 255, 172);
+    border: 1px solid #22fd9a;
+    padding: 10px;
+}
+
+h2{
+    /* color: #22fd9a; */
+    /* text-align: center;
+    background: linear-gradient(to right, #01fb65, #d8327d);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px; */
+
+    text-align: center; /* Centraliza o texto */
+    background: linear-gradient(to right, #01fb65, #d8327d); /* Gradiente do fundo */
+    -webkit-background-clip: text; /* Aplica o gradiente ao texto no Safari/Chrome */
+    background-clip: text; /* Aplica o gradiente ao texto */
+    color: transparent; /* Torna o fundo visível no texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 1px 0; /* Espaçamento acima e abaixo */
+    font-size: 2rem; /* Define o tamanho base */
+    line-height: 1.1; /* Ajusta o espaçamento entre linhas */
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem; /* Reduz o tamanho do texto em telas menores */
+    }
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;  
+}
+
+.container1 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px var(--color1, 0, 0, 0, 0.1);
+    display: block; /* Remove o espaço em branco abaixo da imagem */
+    margin: 0 auto; 
+    border: var(--color2) solid;
+}
+
+.container1 p{
+    /* color: #f6f6f6;
+    text-align: center;
+    text-align: justify;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 30%; */
+    color: #f6f6f6;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 800px;
+    line-height: 1.1;
+    flex: 1;
+    font-size: 1rem;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    
+
+}
+
+@media (max-width: 768px) {
+    p {
+        padding: 0.5rem; /* Reduz o padding em telas menores */
+        max-width: 80%; /* Permite que o texto ocupe mais largura */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha texto e imagem verticalmente */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .container img {
+        max-width: 100%; /* Imagem ocupa a largura completa do container */
+        margin-bottom: 20px; /* Espaço entre imagem e texto */
+    }
+}
+
+
+
+#rodape{
+    background-color: var(--color4);
+    color: #f6f6f6; /* Texto claro */
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+    
+}
+/* esse media serve pra tornar o rodape responsivo */
+@media (max-width: 768px) {
+    #rodape {
+        padding: 15px; /* Reduz o espaçamento interno */
+        margin-top: 50px; /* Reduz o espaçamento acima */
+        font-size: 14px; /* Ajusta o tamanho do texto */
+    }
+}
+
+@media (max-width: 480px) {
+    #rodape {
+        padding: 10px;
+        margin-top: 30px; /* Reduz ainda mais para telas pequenas */
+        font-size: 12px;
+    }
+}
